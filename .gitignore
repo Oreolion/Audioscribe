@@ -24,16 +24,30 @@
 .DS_Store
 *.pem
 
+# environment variables
+.env
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Logs
+*.log
+
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
+# Local development
 .vercel
+.next
 
 # typescript
 *.tsbuildinfo
