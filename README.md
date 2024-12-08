@@ -1,3 +1,5 @@
+My project video : https://www.youtube.com/watch?v=mc7O3KdO1cs&t=2s
+
 # Project Overview
 Our goal is to build a Next.js application that allows users to transcribe audio files using
 OpenAI's Whisper API. The application should provide a clean, user-friendly interface for
