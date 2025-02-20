@@ -1,4 +1,4 @@
-My project video : https://www.youtube.com/watch?v=mc7O3KdO1cs&t=2s
+My project video : https://www.youtube.com/watch?v=NNPCCqndop4
 
 # Project Overview
 Our goal is to build a Next.js application that allows users to transcribe audio files using
