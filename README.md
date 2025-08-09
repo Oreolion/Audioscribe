@@ -1,5 +1,3 @@
-My project video : https://www.youtube.com/watch?v=NNPCCqndop4
-
 # Project Overview
 Our goal is to build a Next.js application that allows users to transcribe audio files using
 OpenAI's Whisper API. The application should provide a clean, user-friendly interface for
@@ -81,33 +79,13 @@ Technologies Used:
 - A description message that will be shown to the user
 - A priceld field that will store the product ID from Stripe
 4. This configuration will be used by both the frontend and the API routes.
-# Doc
-## 1 OpenAI Whisper API Documentation
-The OpenAI Whisper API can be used to transcribe audio files.
-## 2 OpenAI Whisper API Documentation
-The following code snippet demonstrates how to use OpenAI's Whisper API to transcribe an
-audio file in
-import fs from "fs";
-import OpenAI from "openai";
-const openai = new OpenAI();
-async function main() {
-const transcription = await openai.audio.transcriptions.create({
-file: fs.createReadStream("/path/to/file/audio.mp3"),
-model: "whisper-1",
-});
-}
-main();
-console.log(transcription.text);
+
+
 # Important Implementation Notes
-## 0. Adding logs
-- Always add server side logs to your code so we can debug any potential issues
 ## 1. Project setup
-- All new components should go in /components at the root (not in the app folder) and be
-named like example-component.tsx unless otherwise specified
 - All new pages go in /app
 - Use the Next.js 15 app router
-- All data fetching should be done in a server component and pass the data down as props
-- Client components (useState, hooks, etc) require that 'use client' is set at the top of the file
+- All data fetching are done in a server component and pass the data down as props
 ## 2. Server-Side API Calls:
 - All interactions with external APIs (e.g., Reddit, OpenAI) should be performed server-side.
 - Create dedicated API routes in the `pages/api` directory for each external API interaction.
