@@ -10,6 +10,11 @@
 !.yarn/releases
 !.yarn/versions
 
+#stripe directory
+/create-checkout-session
+/payment
+/webhooks
+
 # testing
 /coverage
 
