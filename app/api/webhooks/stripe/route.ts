@@ -40,7 +40,7 @@ export async function POST(req: Request) {
     }
 
     // Get headers after body
-    const headersList = headers();
+    const headersList =await headers();
     const signature = headersList.get('stripe-signature');
     
     console.log('Headers:', {
