@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Texau - Audio Transcription Service',
+  title: 'AudioScribe - Audio Transcription Service',
   description: 'Convert your audio files to text with high accuracy',
 };
 
