@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import FileUpload from "@/components/file-upload";
-import Link from 'next/link';
+import Link from "next/link";
 
 import {
   Play,
@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import VoiceRecorder from "@/components/voice-recorder";
 // import { Elements } from '@stripe/react-stripe-js';
 // import DonationForm from '@/components/donation-form';
 // import { getStripe } from '@/lib/stripe';
@@ -156,9 +157,23 @@ export default function Home() {
                   Audio Transcription
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Upload your audio file and get accurate transcription in
-                  seconds
+                  Record live audio or upload files for accurate transcription
                 </p>
+              </div>
+              <div className="mb-12">
+                <VoiceRecorder />
+              </div>
+
+              {/* Divider */}
+              <div className="relative mb-12">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-300" />
+                </div>
+                <div className="relative flex justify-center text-sm">
+                  <span className="px-2 bg-white text-gray-500">
+                    Or upload a file
+                  </span>
+                </div>
               </div>
 
               <FileUpload />
